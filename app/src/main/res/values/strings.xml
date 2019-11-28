@@ -18,4 +18,7 @@
     <string name="txt_usr_email">Enter Email</string>
     <string name="btn_reg">Register</string>
     <string name="txtview_Login">Login</string>
+    <string name="txtview_password_reset">Password Reset</string>
+    <string name="txt_user_email">Enter Email</string>
+    <string name="btn_send_email">Send Email</string>
 </resources>
