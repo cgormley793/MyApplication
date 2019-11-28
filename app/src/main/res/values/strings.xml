@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txtView_Log_title">Weather Food Locate</string>
+    <string name="txt_log_email">Enter Email</string>
+    <string name="txt_log_pass">Enter Password</string>
+    <string name="btn_login">Login</string>
+    <string name="txtView_register">Register</string>
+    <string name="txtView_Forgottenpassword">Forgotten Password</string>
+    <string name="txtview_Reg_title">User Registration</string>
+    <string name="txt_Usr_email">Enter Email</string>
+    <string name="txt_password">Enter Password</string>
+    <string name="retxt_password">ReEnter Password</string>
+    <string name="txt_userfirstname">Firstname</string>
+    <string name="txt_userlastname">Lastname</string>
+    <string name="button_createaccount">Create Account</string>
+    <string name="textview_login">Login</string>
+</resources>
