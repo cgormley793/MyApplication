@@ -14,4 +14,8 @@
     <string name="txt_userlastname">Lastname</string>
     <string name="button_createaccount">Create Account</string>
     <string name="textview_login">Login</string>
+    <string name="txtview_reg_title">User Registration</string>
+    <string name="txt_usr_email">Enter Email</string>
+    <string name="btn_reg">Register</string>
+    <string name="txtview_Login">Login</string>
 </resources>
