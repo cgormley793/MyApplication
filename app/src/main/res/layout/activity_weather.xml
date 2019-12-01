@@ -6,4 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".WeatherActivity">
 
+    <TextView
+        android:id="@+id/textView_weat_info"
+        android:layout_width="241dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/txtview_weainfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,4 +21,7 @@
     <string name="txtview_password_reset">Password Reset</string>
     <string name="txt_user_email">Enter Email</string>
     <string name="btn_send_email">Send Email</string>
+    <string name="txtview_weainfo">Weather Informtaion</string>
+    <string name="txtView_Full_Name">Enter Full Name</string>
+    <string name="text_reenter_password">ReEnter Password</string>
 </resources>

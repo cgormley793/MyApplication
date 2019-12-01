@@ -24,7 +24,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/txt_Usr_email" />
@@ -34,7 +34,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/txt_password" />
@@ -44,7 +44,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:onClick="registerUser"
         android:text="@string/btn_reg" />
 
@@ -53,7 +53,7 @@
         android:layout_width="311dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="55dp"
         android:onClick="goLogin"
         android:text="@string/txtview_Login" />
 
@@ -61,7 +61,7 @@
         android:id="@+id/progressBar_UsrReg"
         style="?android:attr/progressBarStyle"
         android:layout_width="match_parent"
-        android:layout_marginTop="80dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>
