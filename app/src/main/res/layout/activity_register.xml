@@ -5,13 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/textView_Reg_title"
         android:layout_width="148dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="left"
         android:layout_marginStart="152dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
         android:layout_marginTop="35dp"
         android:layout_marginBottom="36dp"
         android:text="@string/txtview_Reg_title"
@@ -26,8 +30,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:textStyle="bold"
+        android:hint="Enter Email"
         android:inputType="textPersonName"
-        android:text="@string/txt_Usr_email" />
+        />
 
     <EditText
         android:id="@+id/editText_Password"
@@ -35,9 +41,11 @@
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
+        android:textStyle="bold"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/txt_password" />
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+         />
 
     <Button
         android:id="@+id/button_Reg"
@@ -54,6 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="55dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
         android:onClick="goLogin"
         android:text="@string/txtview_Login" />
 

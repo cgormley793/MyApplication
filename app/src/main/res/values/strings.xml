@@ -24,4 +24,5 @@
     <string name="txtview_weainfo">Weather Informtaion</string>
     <string name="txtView_Full_Name">Enter Full Name</string>
     <string name="text_reenter_password">ReEnter Password</string>
+    <string name="txtview_showpass">Show Password</string>
 </resources>

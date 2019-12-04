@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -12,9 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:layout_marginBottom="89dp"
+        android:textStyle="bold"
         android:text="@string/txtView_Log_title"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/editText_Log_email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,6 +31,7 @@
         android:layout_marginEnd="38dp"
         android:layout_marginRight="38dp"
         android:layout_marginBottom="44dp"
+        android:textStyle="bold"
         android:ems="10"
         android:hint="@string/txt_log_email"
         android:inputType="textPersonName"
@@ -44,9 +49,10 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginBottom="46dp"
+        android:textStyle="bold"
         android:ems="10"
         android:hint="@string/txt_log_pass"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/button_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +62,7 @@
         android:id="@+id/button_login"
         android:layout_width="114dp"
         android:layout_height="0dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="48dp"
         android:onClick="LoginUser"
         android:text="@string/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,6 +78,8 @@
         android:layout_marginBottom="27dp"
         android:onClick="goRegister"
         android:text="@string/txtView_register"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView_Forgottenpassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_login" />
@@ -84,6 +92,8 @@
         android:layout_marginBottom="150dp"
         android:onClick="goForgottenPassword"
         android:text="@string/txtView_Forgottenpassword"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Register" />

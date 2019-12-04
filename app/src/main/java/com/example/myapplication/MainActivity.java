@@ -5,8 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
+import android.text.InputType;
 import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
+
     //firebase auth object
     private FirebaseAuth firebaseAuth;
 
@@ -26,12 +33,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //getting firebase auth onject
         firebaseAuth = FirebaseAuth.getInstance();
+        //
+
 
     }
 
     public void LoginUser(View view) {
         String email = ((EditText) findViewById(R.id.editText_Log_email)).getText().toString();
-        String password = ((EditText) findViewById(R.id.editText_Log_Password)).getText().toString();
+         String password = ((EditText) findViewById(R.id.editText_Log_Password)).getText().toString();
 
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(this, "Please enter email", Toast.LENGTH_LONG).show();
