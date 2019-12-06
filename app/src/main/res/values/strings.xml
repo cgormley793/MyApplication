@@ -25,4 +25,10 @@
     <string name="txtView_Full_Name">Enter Full Name</string>
     <string name="text_reenter_password">ReEnter Password</string>
     <string name="txtview_showpass">Show Password</string>
+    <string name="txt_food_hygiene">Food Hygiene</string>
+    <string name="txt_logout">Log Out</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="txt_foodhy">Food Hygiene Information</string>
+    <string name="but_search">Search</string>
+    <string name="txt_foodhy_2">Food Hygiene</string>
 </resources>

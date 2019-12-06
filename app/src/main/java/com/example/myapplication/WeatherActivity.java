@@ -2,8 +2,14 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -27,5 +33,11 @@ public class WeatherActivity extends AppCompatActivity {
         setContentView(R.layout.activity_weather);
 
     }
-}
+    public void goFoodHygiene (View view){
+        startActivity(new Intent(WeatherActivity.this, FoodHygieneActivity.class));
+    }
+    public void goMainActivity (View view){
+        startActivity(new Intent(WeatherActivity.this, MainActivity.class));
+    }
 
+}
