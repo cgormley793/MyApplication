@@ -62,7 +62,7 @@ public class WeatherActivity extends AppCompatActivity {
                 JSONObject toplevel = new JSONObject(builder.toString());
                 JSONObject main = toplevel.getJSONObject("main");
                 weather = String.valueOf(main.getDouble("temp"));
-              
+
 
                 urlConnection.disconnect();
             } catch(IOException | JSONException e){
