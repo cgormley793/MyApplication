@@ -20,6 +20,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
@@ -29,6 +31,8 @@ import java.util.regex.Pattern;
 public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private ProgressBar progressBar;
+    private DatabaseReference mDatabase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,16 +43,23 @@ public class RegisterActivity extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar_UsrReg);
         progressBar.setVisibility(View.INVISIBLE);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference("user");
     }
+
+
+
 
     public void registerUser(View view) {
         //getting fullname  email and password from edit text
-
-
         String email = ((EditText) findViewById(R.id.editText_UserEmail)).getText().toString();
         String password = ((EditText) findViewById(R.id.editText_Password)).getText().toString();
         String Reenterpassword = ((EditText) findViewById(R.id.editText_rePassword)).getText().toString();
         String fullname = ((EditText) findViewById(R.id.editText_fullname)).getText().toString();
+
+        mDatabase.child("email").setValue(email);
+        mDatabase.child("password").setValue(password);
+        mDatabase.child("Reenterpassword").setValue(Reenterpassword);
+        mDatabase.child("fullname").setValue(fullname);
 
 
 
